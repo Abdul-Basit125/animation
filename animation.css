@@ -1,0 +1,51 @@
+#road{
+    width: 100%;
+    height: 500px;
+}
+#car{
+    width: 250px;
+    position: absolute;
+    top: 58%;
+    animation: car-moving 8s linear 1s forwards infinite;
+}
+
+#car img{
+    max-width: 100%;
+}
+@keyframes car-moving {
+    from{
+        left:0px; 
+        top:360px;
+    }
+    to{
+        left:1000px ;
+         top:360px;
+    }
+}
+
+#wheel1{
+    width: 47px;
+    position: relative;
+    left: 174px;
+    top: -54px;
+    animation:  movingFan 8s linear 1s infinite  forwards;
+}
+#wheel2{
+    width: 47px;
+    position: relative;
+    left: -30px;
+    top: -54px;
+    animation:  movingFan 8s linear 1s infinite  forwards;
+    
+}
+@keyframes movingFan {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+    
